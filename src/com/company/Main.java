@@ -5,17 +5,15 @@ import java.util.Arrays;
 
 public class Main {
 
-    public static ArrayList<Integer> firstList = new ArrayList<>(Arrays.asList(1, 2, 3, 10, 20, 33, 44, 55));
-    public static ArrayList<Integer> secondList = new ArrayList<>(Arrays.asList(5, 15, 25, 30, 35, 45, 65));
-    public static ArrayList<Integer> result = new ArrayList<Integer>();
-    private static Service service;
+    private static ArrayList<Integer> firstList = new ArrayList<>(Arrays.asList(1, 2, 3, 10, 20, 33, 44, 55));;
+    private static ArrayList<Integer> secondList = new ArrayList<>(Arrays.asList(5, 15, 25, 30, 35, 45, 65));;
 
     public static void main(String[] args) {
 
-        service.merge(firstList, secondList);
+        ArrayListService.merge(firstList, secondList);
         System.out.print("fistList: [" );
-        service.printList(firstList);
+        ArrayListService.printList(firstList);
         System.out.print("secondList: [");
-        service.printList(secondList);
+        ArrayListService.printList(secondList);
     }
 }
